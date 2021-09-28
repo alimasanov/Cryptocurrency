@@ -16,11 +16,9 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import com.google.accompanist.flowlayout.FlowRow
-import com.my.cryptocurrency.presentation.Screen
+import com.my.cryptocurrency.presentation.AndroidViewScreen
 import com.my.cryptocurrency.presentation.coin_detail.CoinDetailViewModel
-import com.my.cryptocurrency.presentation.coin_list.CoinListViewModel
 
 @Composable
 fun CoinDetailScreen(
@@ -81,6 +79,9 @@ fun CoinDetailScreen(
                             .padding(10.dp)
                     )
                     Divider()
+                }
+                item {
+                    AndroidViewScreen()
                 }
             }
         }

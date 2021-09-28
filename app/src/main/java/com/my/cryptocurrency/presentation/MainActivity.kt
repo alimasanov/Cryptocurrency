@@ -35,6 +35,11 @@ class MainActivity : ComponentActivity() {
                         ) {
                             CoinDetailScreen()
                         }
+                        composable(
+                            route = Screen.AndroidViewScreen.route
+                        ) {
+                            AndroidViewScreen()
+                        }
                     }
 
                 }
